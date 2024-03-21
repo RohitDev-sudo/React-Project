@@ -22,9 +22,7 @@ function useCurrencyInfo(currency) {
     return newObj;
   };
   useEffect(() => {
-    fetch(
-      `https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_wcU4VqYtZ0JqJJTwpizlMzXV7JieeubKgYZrGVpD&currencies=`
-    )
+    fetch(`https://api.freecurrencyapi.com/v1/latest?apikey=`)
       .then((res) => res.json())
       .then((res) => {
         const lowercaseData = convertToLowerCase(res.data);
